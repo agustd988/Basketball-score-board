@@ -14,7 +14,7 @@ body{
 }
 /*designing the 3 col */
 .container1,.container2,.between{
-    margin:50px 0px;
+    margin:50px;
     text-align: center;
     color: white;
 }
@@ -79,6 +79,9 @@ button:hover{
     }
     .fouls p{
         margin:10px auto 5px;
+    }
+    .container1,.container2{
+        margin:50px 0px;
     }
     button:hover{
         background: inherit;
