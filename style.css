@@ -14,9 +14,10 @@ body{
     align-items: center;
     height: 100vh;
 }
-/*designing the 3 colons */
+/*designing the 3 col */
 .container1,.container2,.between{
-    width: 250px;
+    margin:10px;
+    width: 300px;
     text-align: center;
     color: white;
 }
