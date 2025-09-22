@@ -10,13 +10,12 @@ body{
 .container{
     display: flex;
     justify-content: space-between;
-    margin:0 100px;
     align-items: center;
     height: 100vh;
 }
 /*designing the 3 col */
 .container1,.container2,.between{
-    margin:10px;
+    margin:50px;
     width: 300px;
     text-align: center;
     color: white;
@@ -40,7 +39,7 @@ button{
 /*designing the buttons to add score and new game button */
 .addbtn button,.between #new{
     padding: 10px;
-    margin:10px 20px 20px;
+    margin:10px 10px 20px;
     border-radius: 10px;
     font-size:15px;
     font-weight: 600;
@@ -62,9 +61,25 @@ button{
 .between{
     margin:0px auto 100px;
 }
-
 button:hover{
     cursor: pointer;
     background: #000;
     border: none;
+}
+@media (max-width:950px){
+    .score{
+        padding:20px;
+    }
+}
+@media (max-width:678px){
+    .score{
+        padding:10px;
+    }
+    .addbtn button{
+        margin: 4px 50px;
+        display: block;
+    }
+    .fouls p{
+        margin:10px auto 5px;
+    }
 }
