@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basket ball scoreboard</title>
+    <link rel ="stylesheet" href= "style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="container1">
+            <h1>HOME</h1>
+            <div class="score">
+                <h2 id="scorel">0</h2>
+            </div>
+            <div class="addbtn">
+                <button id="add1" onclick="add(score1,1)">+1</button>
+                <button id="add2" onclick="add(score1,2)">+2</button>
+                <button id="add3" onclick="add(score1,3)">+3</button>
+            </div>
+            <div class="fouls">
+                <p>Fouls</p>
+                <h2 id="foull">0</h2>
+                <button onclick="add(foull,1)">+</button>
+                <p>Time Outs</p>
+                <h2 id="timeoutl">0</h2>
+                <button onclick="add(timeoutl,1)">+</button>
+            </div>
+        </div>
+        <div class="between">
+            <div class="period">
+                <p>Period</p>
+                <h5 id="period_num">0</h5>
+                <button onclick="add(period,1)">+</button>
+            </div>
+            <div class="timer">
+                <p>Timer</p>
+                <h5 id="timer_num">10:00</h5>
+            </div>
+            <div class="controlbtn">
+                <button id="start">Start</button>
+                <button id="pause">Pause</button>
+                <button id="reset">Reset</button>
+            </div>
+            <button id="new" onclick="newgame()">New Game</button>
+        </div>
+        <div class="container2">
+            <h1>GUEST</h1>
+            <div class="score">
+                <h2 id="score2">0</h2>
+            </div>
+            <div class="addbtn">
+                <button id="add3" onclick="add(score2,1)">+1</button>
+                <button id="add4" onclick="add(score2,2)">+2</button>
+                <button id="add5" onclick="add(score2,3)">+3</button>
+            </div>
+            <div class="fouls">
+                <p>Fouls</p>
+                <h2 id="foulr">0</h2>
+                <button onclick="add(foulr,1)">+</button>
+                <p>Time Outs</p>
+                <h2 id="timeoutr">0</h2>
+                <button onclick="add(timeoutr,1)">+</button>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
